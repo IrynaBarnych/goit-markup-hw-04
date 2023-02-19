@@ -1,0 +1,384 @@
+:root {
+    --text: #434455;
+    --dark: #2e2f42;
+    --second-text-color: #fff;
+    --primary-brand: #4d5ae5;
+    --light: #f4f4fd;
+    --pressed-state: #404bbf;
+    --button-noactive: #f4f4fd;
+    --accent: #e7e9fc;
+    --success: #31d0aa;
+    --subtle-text: #8e8f99;
+    --modal-overlay: #2e2f4266;
+    --hero-background: #2e2f42b2;
+
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--dark);
+    background-color: var(--second-text-color);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+}
+
+.container {
+
+    width: 1158px;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: auto;
+    margin-left: auto;
+
+    
+}
+
+ul {
+    list-style: none;
+}
+
+p, h1, h2, h3, h4, h5, ul {
+    padding: 0;
+    margin: 0;
+}
+
+/*logo*/
+
+.header-container {
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--accent);
+
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 76px;
+    padding: 24px 0;
+    
+
+}
+
+.address-nav {
+    display: flex;
+    align-items: center; 
+    
+}
+
+.logo_first {
+    font-family: Raleway, sans-serif;
+    color: var(--primary-brand);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.logo_second {
+    color: var(--dark);
+ }
+
+.site-nav {
+    display: flex;
+    gap: 40px;
+
+
+} 
+
+.site-nav .link {
+    color: var(--dark);
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--pressed-state);
+    
+}
+
+.site-nav .link.current {
+    color: var(--primary-brand);
+    text-decoration: none;
+}
+
+.addres-contact {
+    display: flex;
+    gap: 40px;
+    
+}
+
+.addres-contact .link  {
+    color: var(--text);
+    text-decoration: none;
+    font-style: normal;
+    padding: 24px 0;
+}
+
+.addres-contact .link:hover,
+.addres-contact .link:focus {
+    color: var(--pressed-state);
+}
+
+
+.fon-hero-title {
+    background-color: var(--dark);
+    padding-top: 188px;
+    padding-bottom: 292px;
+    text-align: center;
+}
+
+.hero-title {
+    color: var(--second-text-color);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 494px;
+    margin: 0 auto 48px;
+
+
+}
+
+.button-main {
+    font-family: Roboto, sans-serif;
+    background-color: var(--primary-brand);
+    color: var(--second-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5; 
+    border-radius: 4px;
+    border: 0px;
+    padding: 16px 32px;
+    margin-left: auto;
+    nav-right: aut;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+
+}
+
+.button-main:hover,
+.button-main:focus {
+    color: var(--second-text-color);
+    background-color: var(--pressed-state);
+}
+
+.block-description {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.section-title {
+    color: var(--dark);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left;
+    padding-bottom: 8px;
+}
+
+.title-description {
+    display: flex;
+    gap: 24px;
+}
+    
+    
+    
+
+.section-description {
+    color: #434455;
+    flex-wrap: wrap;
+    margin: 0 auto 48px;
+}
+
+.block-doing {
+    padding-bottom: 120px;
+    }
+
+.doing {
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    }
+
+    .doing-section {
+        flex-basis: calc((100% - 48px) / 3);   
+        display: flex; 
+        gap: 24px;
+        padding-top: 72px;
+    }
+
+ .teams-fon {
+    background-color: var(--light);
+    padding-bottom: 116px;
+  } 
+
+ 
+.teams {
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    padding-bottom: 72px;
+    padding-top: 120px;
+    }
+
+    .team-class {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    }
+
+.worker-fon {
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #fff;
+    margin: 0 auto;   
+}
+
+.worker-team {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.worker {
+    color: var(--dark);
+    font-weight: 500;
+    padding-top: 32px;
+    padding-bottom: 8px;
+
+}
+.team-job {
+    color: var(--text);
+    padding-bottom: 32px;
+}
+
+.fon-section {
+    display: flex;
+}
+.button-section {
+    padding-top: 83px;
+    padding-bottom: 60px;
+}
+
+.button-port {
+    display: flex;
+    gap: 24px;
+    text-align: center;  
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.button-nav-port {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    border-color: var(--accent);
+    background-color: var(--button-noactive);
+    color: var(--primary-brand);
+    font-size: 16px;
+    line-height: 1.5;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+}
+
+.button-nav-port:hover,
+.button-nav-port:focus  {
+    color: var(--second-text-color);
+    background-color: var(--pressed-state);
+}
+.container {
+    padding-right: 16px;
+}
+
+.photo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-bottom: 120px;
+}
+
+.fon-photo:nth-child(3) {
+    margin-right: 0;
+}
+
+.fon-photo {
+    background-color: var(--second-text-color);
+    border-color: var(--accent);
+    max-width: 360px;
+    flex-basis: calc((100% - 48px) / 3);
+}
+
+
+.block-photo {
+}
+
+.fon-photo {
+}
+
+.title-section {
+padding-top: 32px;
+padding-bottom: 32px;
+padding-left: 8px;
+}
+
+.section-title-photo {
+    color: var(--dark);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left;
+    padding-bottom: 8px;
+}
+
+
+.description {
+    color: var(--text);
+    padding-top: 8px;
+
+}
+
+.footer {
+    color: var(--accent);
+    background-color: var(--dark);
+    padding-top: 100px;
+    padding-bottom: 100px;
+} 
+
+.footer-end {
+    width: 264px;
+    padding-bottom: 16px;
+}
+
+.logo_second_footer {
+    font-weight: 800;
+    color: var(--button-noactive);
+}
+
+.footer-text {
+    width: 264px;
+}
+
+
+
+
+
