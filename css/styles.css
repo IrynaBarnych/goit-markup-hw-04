@@ -311,7 +311,7 @@ p, h1, h2, h3, h4, h5, ul {
 .button-nav-port {
     font-family: Roboto, sans-serif;
     font-weight: 500;
-    border-color: var(--accent);
+    border: 1px solid var(--accent);
     background-color: var(--button-noactive);
     color: var(--primary-brand);
     font-size: 16px;
@@ -335,7 +335,7 @@ p, h1, h2, h3, h4, h5, ul {
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
-    padding-top: 60px;
+    margin-top: 60px;
 
     
 }
@@ -390,7 +390,7 @@ border-bottom: 1px solid var(--light);
 
 .footer-text {
     width: 264px;
-    padding-top: 16px;
+    margin-top: 16px;
 }
 
 
