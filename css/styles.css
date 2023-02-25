@@ -138,10 +138,15 @@ p, h1, h2, h3, h4, h5, ul {
 
 
 .fon-hero-title {
-    background-color: var(--dark);
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office.jpg');
+    background-color: var(--second-text-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .hero-title {
@@ -166,7 +171,7 @@ p, h1, h2, h3, h4, h5, ul {
     border: 0px;
     padding: 16px 32px;
     margin-left: auto;
-    nav-right: aut;
+    nav-right: auto;
     text-align: center;
     cursor: pointer;
     letter-spacing: 0.04em;
@@ -224,7 +229,7 @@ p, h1, h2, h3, h4, h5, ul {
     text-align: center;
     flex-wrap: wrap;
     gap: 24px;
-     }
+    }
 
 .doing-section {
    
@@ -368,8 +373,53 @@ border-bottom: 1px solid var(--light);
 }
 
 
+.customers-block {
+    padding-top: 130px;
+    padding-bottom: 120px;
+
+}
 
 
+.title-customers {
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    margin-bottom: 72px;
+    }
+
+    .customers-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    
+   
+    }
+
+    .customers-photo {
+
+        flex-basis: calc((100% - 120px) / 6);
+    }
+    
+
+    
+    .customers-link {
+
+        background-color: var(--button-noactive);
+
+    
+    }
+    
+    .customers-icon {
+        width: 40px;
+        height: 52px;
+        fill: var(--subtle-text)  
+    }
+    
+    .customers-link:hover .customers-icon {
+        fill: var(--pressed-state);
+    }
 
 
 .footer {
@@ -391,6 +441,38 @@ border-bottom: 1px solid var(--light);
 .footer-text {
     width: 264px;
     margin-top: 16px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.social-item {
+    width: 40px;
+    height: 40px;
+}
+
+.social-link {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--button-noactive);
+    border-radius: 50%;
+
+}
+
+.social-icon {
+    width: 16px;
+    height: 16px;
+    fill: var(--primary-brand);  
+}
+
+.social-link:hover .social-icon {
+    fill: var(--pressed-state);
 }
 
 
