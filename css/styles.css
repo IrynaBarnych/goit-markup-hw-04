@@ -453,6 +453,8 @@ border-bottom: 1px solid var(--light);
     width: 40px;
     height: 40px;
     background-color: #4d5ae5;
+    border-radius: 40px;
+
 }
 
 .social-item {
@@ -475,6 +477,8 @@ border-bottom: 1px solid var(--light);
     align-items:center;
     justify-content: center;
     border-color: red;  
+    border-radius: 40px 40px 40px 40px;
+
 }
 
 .social-link:hover .social-icon {
