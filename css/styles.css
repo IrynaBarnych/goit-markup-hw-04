@@ -57,7 +57,7 @@ p, h1, h2, h3, h4, h5, ul {
     display: flex;
     align-items: center;
     gap: 40px;
-    border-bottom-width: 1px;
+    border-bottom-width: 6px 1px 1px;
     border-bottom-style: solid;
     border-bottom-color: var(--accent);
 
@@ -186,18 +186,66 @@ p, h1, h2, h3, h4, h5, ul {
 .block-description {
     padding-top: 120px;
     padding-bottom: 120px;
+    gap: 24px;
+
 }
 
 .class-description {
     flex-basis: calc((100% - 72px) / 4);  
-    color: var(--text);
+  
+    height: 112px;
+    
+    display: block;
+
+    }
+    
+
+
+
+
+.description-icon {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--second-text-color);
+    color: var(--second-text-color);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 } 
+
+.description-icon:hover {
+    border: 1px solid var(--primary-brand);
+    color: var(--primary-brand);
+    
+}
+
+.photo-description {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 8px;
+}
+
 
 .title-description {
     display: flex;
     gap: 24px;
-    flex-wrap: wrap;
+
+
+
 }
+
+.photo-description {
+       
+
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
 
 .section-title {
     color: var(--dark);
@@ -268,6 +316,7 @@ p, h1, h2, h3, h4, h5, ul {
 .worker-fon {
     font-size: 16px;
     line-height: 1.5;
+    height: 224px;
     flex-basis: calc((100% - 72px) / 4); 
     background: var(--second-text-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -384,7 +433,7 @@ border-bottom: 1px solid var(--light);
     display: block;
 }
 
-.block-photo :hover {
+.block-photo:hover {
     box-shadow: 
     0px 1px 1px 0px #2E2F4229,
     0px 1px 6px 0px #2E2F4214,
@@ -423,48 +472,49 @@ border-bottom: 1px solid var(--light);
 
     .customers-photo {
         
-        background-color: var(--second-text-color);
         flex-basis: calc((100% - 120px) / 6);
         align-items:center;
         justify-content: center;
-    
-
-    }
-    
-    .photo-customers {
         width: 168px;
         height: 88px;
+
         border: 1px solid var(--subtle-text);
         border-radius: 4px;
-        color: var(--subtle-text);
-        fill: currentColor;
-        display: block;
 
     }
-    
-    
-    
-    .customers-icon {
 
+
+    .customers-icon {
+        fill: var(--subtle-text);
+
+        width: 104px;
+        height: 58px;
+
+    }
+
+    .photo-customers {
+        
+
+        width: 100%;
+        height: 100%;
         display: flex;
         align-items:center;
         justify-content: center;
-  
 
     }
         
   
     
     .photo-customers:hover  {
-        border: 1px solid var(--primary-brand);
-        fill: currentColor;
+        border: 1px solid var(--pressed-state);
+        border-radius: 4px;
+
 
         }
-
-
+        
     .customers-icon:hover {
-    fill: var(--primary-brand);
-    fill: currentColor;
+    fill: var(--pressed-state);
+
 }
 .footer {
     color: var(--accent);
@@ -533,9 +583,7 @@ width: 35%;
     height: 16px;
 }
 
-.social-link {
 
-}
 
 .footer-icon {
     width: 100%;
