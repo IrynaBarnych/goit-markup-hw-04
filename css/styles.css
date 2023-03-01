@@ -13,6 +13,7 @@
     --hero-background: #2e2f42b2;
     --block-hover: #2E2F4214;
 
+
 }
 
 body {
@@ -390,21 +391,23 @@ p, h1, h2, h3, h4, h5, ul {
 .photo-link {
     display: block;
     text-decoration: none;
-    border: 1px solid var(--accent);
-    box-shadow: 0px 1px 1px 0px var(--block-hover);
-
-}
+    }
 
 
 .photo-link:hover {
-    border: 0.5px solid var(--button-noactive);
-    box-shadow: 0px 1px 6px 0px var(--block-hover);
+    box-shadow: 
+    0px 1px 6px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .title-section {
 padding-top: 32px;
 padding-bottom: 32px;
 padding-left: 16px;
+border-left: 1px solid var(--accent);
+border-right: 1px solid var(--accent);
+border-bottom: 1px solid var(--accent)
 }
 
 .section-title-photo {
@@ -421,18 +424,6 @@ padding-left: 16px;
 }
 
 
-box-shadow: 0px 2px 1px 0px #2E2F4214;
-
-box-shadow: 0px 1px 1px 0px #2E2F4229;
-
-box-shadow: 0px 1px 6px 0px #2E2F4214;
-
-/*.block-photo:hover {
-    box-shadow: 
-    0px 1px 1px 0px #2E2F4229,
-    0px 1px 6px 0px #2E2F4214,
-    0px 4px 4px 0px #00000040;
-}*/
 
 .description-photo {
     color: var(--text); 
@@ -474,7 +465,6 @@ box-shadow: 0px 1px 6px 0px #2E2F4214;
 
     .customers-icon {
         fill: var(--subtle-text);
-        border-radius: 4px;
         border: 1px solid var(--subtle-text);
         width: 100%;
         height: 100%;
@@ -535,9 +525,6 @@ width: 35%;
     max-width: 100%; 
     height: auto;
     width: 65%;
-    padding-bottom: 16px;
-
-
 }
 
 .fooret-title {
